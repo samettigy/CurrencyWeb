@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34003.232
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWeb.MVC", "CurrencyWeb.MVC\CurrencyWeb.MVC.csproj", "{AE402A83-B34C-4095-B453-53AAB272D787}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWeb.Entities", "CurrencyWeb.Entities\CurrencyWeb.Entities.csproj", "{964E3AE0-32DB-4045-B1A6-F92036EFAEED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWeb.DataAPI", "CurrencyWeb.DataAPI\CurrencyWeb.DataAPI.csproj", "{34C49D3B-A4B9-4FDB-B77A-2476C73F5364}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWeb.BusinessAPI", "CurrencyWeb.BusinessAPI\CurrencyWeb.BusinessAPI.csproj", "{A934CF2B-ED19-4ED1-9533-05564AC4824C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWeb.DAL", "CurrencyWeb.DAL\CurrencyWeb.DAL.csproj", "{76131C90-F8D0-4636-AECA-32B267C3B706}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CurrencyWeb.Business", "CurrencyWeb.Business\CurrencyWeb.Business.csproj", "{A2355773-5538-4565-85EB-8991814529EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE402A83-B34C-4095-B453-53AAB272D787}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE402A83-B34C-4095-B453-53AAB272D787}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE402A83-B34C-4095-B453-53AAB272D787}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE402A83-B34C-4095-B453-53AAB272D787}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964E3AE0-32DB-4045-B1A6-F92036EFAEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964E3AE0-32DB-4045-B1A6-F92036EFAEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964E3AE0-32DB-4045-B1A6-F92036EFAEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964E3AE0-32DB-4045-B1A6-F92036EFAEED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C49D3B-A4B9-4FDB-B77A-2476C73F5364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C49D3B-A4B9-4FDB-B77A-2476C73F5364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C49D3B-A4B9-4FDB-B77A-2476C73F5364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C49D3B-A4B9-4FDB-B77A-2476C73F5364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A934CF2B-ED19-4ED1-9533-05564AC4824C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A934CF2B-ED19-4ED1-9533-05564AC4824C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A934CF2B-ED19-4ED1-9533-05564AC4824C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A934CF2B-ED19-4ED1-9533-05564AC4824C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76131C90-F8D0-4636-AECA-32B267C3B706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76131C90-F8D0-4636-AECA-32B267C3B706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76131C90-F8D0-4636-AECA-32B267C3B706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76131C90-F8D0-4636-AECA-32B267C3B706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2355773-5538-4565-85EB-8991814529EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2355773-5538-4565-85EB-8991814529EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2355773-5538-4565-85EB-8991814529EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2355773-5538-4565-85EB-8991814529EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6819FE6-A288-4719-B042-B75D70407F36}
+	EndGlobalSection
+EndGlobal

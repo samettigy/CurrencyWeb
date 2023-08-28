@@ -1,0 +1,144 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Business Data Chart";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Bootstrap CSS -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Business Data Chart</h1>
+        <div class="mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Currency Code Giriniz(USD,AUD,DKK,EUR,GBP,CHF,SEK,CAD,KWD,NOK,SAR,JPY,BGN,RON,RUB,IRR,CNY,PKR,QAR,KRW,AZN,AED)">
+            <button id="searchButton" class="btn btn-primary mt-2">Search</button>
+        </div>
+        <div id="lineChart"></div>
+    </div>
+
+    <!-- jQuery and AJAX -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#searchButton').click(function () {
+                var searchTerm = $('#searchInput').val();
+
+                $.ajax({
+                    url: 'https://localhost:7249/api/Currency/GetMoneyRate/' + searchTerm,
+                    method: 'GET',
+                    success: function (data) {
+                    var filteredData = data.filter(function (item) {
+                        return item.Name.toLowerCase().includes(searchTerm.toLowerCase());
+                    });
+
+                    generateLineChart(filteredData);
+                },
+                    error: function () {
+                        console.error("API request failed.");
+                    }
+                });
+            });
+
+            function generateLineChart(data) {
+                d3.select("#lineChart").selectAll("*").remove();
+
+                var svg = d3.select("#lineChart")
+                    .append("svg")
+                    .attr("width", 600)
+                    .attr("height", 400);
+
+                var margin = { top: 20, right: 20, bottom: 40, left: 100 };
+                var width = +svg.attr("width") - margin.left - margin.right;
+                var height = +svg.attr("height") - margin.top - margin.bottom;
+
+                var g = svg.append("g")
+                    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+                var parseDate = d3.timeParse("%Y-%m-%dT%H:%M:%S");
+
+                data.forEach(function (d) {
+                    d.Date = parseDate(d.Date);
+                    d.BuyRate = +d.BuyRate;
+                    d.SellRate = +d.SellRate;
+                });
+
+                var x = d3.scaleTime()
+                    .domain(d3.extent(data, function (d) { return d.Date; }))
+                    .range([0, width]);
+
+                var y = d3.scaleLinear()
+                    .domain([0, d3.max(data, function (d) { return Math.max(d.BuyRate, d.SellRate); })])
+                    .range([height, 0]);
+
+                var lineBuy = d3.line()
+                    .x(function (d) { return x(d.Date); })
+                    .y(function (d) { return y(d.BuyRate); });
+
+                var lineSell = d3.line()
+                    .x(function (d) { return x(d.Date); })
+                    .y(function (d) { return y(d.SellRate); });
+
+                g.append("path")
+                    .data([data])
+                    .attr("class", "line")
+                    .attr("d", lineBuy);
+
+                g.append("path")
+                    .data([data])
+                    .attr("class", "line")
+                    .attr("d", lineSell)
+                    .style("stroke", "red");
+
+                // Tarihleri altına ekleyelim
+                g.append("g")
+                    .attr("transform", "translate(0," + height + ")")
+                    .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y-%m-%d")));
+
+                // Alış-satış fiyatlarını sol tarafa ekleyelim
+                g.append("g")
+                    .call(d3.axisLeft(y).tickFormat(d3.format(".2f")));
+
+                var legend = svg.selectAll(".legend")
+                    .data(["Buy Rate", "Sell Rate"])
+                    .enter().append("g")
+                    .attr("class", "legend")
+                    .attr("transform", function (d, i) { return "translate(0," + i * 20 + ")"; });
+
+                legend.append("rect")
+                    .attr("x", width - 18)
+                    .attr("width", 18)
+                    .attr("height", 18)
+                    .style("fill", function (d, i) { return i === 0 ? "steelblue" : "red"; });
+
+                legend.append("text")
+                    .attr("x", width - 24)
+                    .attr("y", 9)
+                    .attr("dy", ".35em")
+                    .style("text-anchor", "end")
+                    .text(function (d) { return d; });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
