@@ -2,7 +2,7 @@ using CurrencyWeb.Business.Abstract;
 using CurrencyWeb.Business.Concrete;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-var MyAllowSpecificOrigins = "eben";
+var MyAllowSpecificOrigins = "izin";
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>

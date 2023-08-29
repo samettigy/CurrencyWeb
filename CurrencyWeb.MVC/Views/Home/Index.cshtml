@@ -33,12 +33,8 @@
                     url: 'https://localhost:7249/api/Currency/GetMoneyRate/' + searchTerm,
                     method: 'GET',
                     success: function (data) {
-                    var filteredData = data.filter(function (item) {
-                        return item.Name.toLowerCase().includes(searchTerm.toLowerCase());
-                    });
-
-                    generateLineChart(filteredData);
-                },
+                        generateLineChart(data);
+                    },
                     error: function () {
                         console.error("API request failed.");
                     }
@@ -64,8 +60,8 @@
 
                 data.forEach(function (d) {
                     d.Date = parseDate(d.Date);
-                    d.BuyRate = +d.BuyRate;
-                    d.SellRate = +d.SellRate;
+                    d.Buy = +d.Buy;
+                    d.Sell = +d.Sell;
                 });
 
                 var x = d3.scaleTime()
@@ -73,16 +69,16 @@
                     .range([0, width]);
 
                 var y = d3.scaleLinear()
-                    .domain([0, d3.max(data, function (d) { return Math.max(d.BuyRate, d.SellRate); })])
+                    .domain([0, d3.max(data, function (d) { return Math.max(d.Buy, d.Sell); })])
                     .range([height, 0]);
 
                 var lineBuy = d3.line()
                     .x(function (d) { return x(d.Date); })
-                    .y(function (d) { return y(d.BuyRate); });
+                    .y(function (d) { return y(d.Buy); });
 
                 var lineSell = d3.line()
                     .x(function (d) { return x(d.Date); })
-                    .y(function (d) { return y(d.SellRate); });
+                    .y(function (d) { return y(d.Sell); });
 
                 g.append("path")
                     .data([data])
@@ -95,12 +91,12 @@
                     .attr("d", lineSell)
                     .style("stroke", "red");
 
-                // Tarihleri altına ekleyelim
+              
                 g.append("g")
                     .attr("transform", "translate(0," + height + ")")
                     .call(d3.axisBottom(x).tickFormat(d3.timeFormat("%Y-%m-%d")));
 
-                // Alış-satış fiyatlarını sol tarafa ekleyelim
+               
                 g.append("g")
                     .call(d3.axisLeft(y).tickFormat(d3.format(".2f")));
 
@@ -127,6 +123,70 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
