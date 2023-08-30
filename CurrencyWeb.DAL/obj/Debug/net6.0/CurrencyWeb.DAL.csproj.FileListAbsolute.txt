@@ -1,0 +1,17 @@
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\bin\Debug\net6.0\CurrencyWeb.DAL.deps.json
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\bin\Debug\net6.0\CurrencyWeb.DAL.runtimeconfig.json
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\bin\Debug\net6.0\CurrencyWeb.DAL.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\bin\Debug\net6.0\CurrencyWeb.DAL.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\bin\Debug\net6.0\CurrencyWeb.Entities.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\bin\Debug\net6.0\CurrencyWeb.Entities.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.csproj.AssemblyReference.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.AssemblyInfoInputs.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.AssemblyInfo.cs
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.csproj.CopyComplete
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\refint\CurrencyWeb.DAL.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\CurrencyWeb.DAL.genruntimeconfig.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.DAL\obj\Debug\net6.0\ref\CurrencyWeb.DAL.dll

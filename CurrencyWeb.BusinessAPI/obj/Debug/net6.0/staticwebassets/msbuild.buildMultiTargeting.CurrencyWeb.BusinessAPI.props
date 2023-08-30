@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\CurrencyWeb.BusinessAPI.props" />
+</Project>

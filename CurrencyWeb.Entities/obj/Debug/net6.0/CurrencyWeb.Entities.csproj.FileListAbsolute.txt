@@ -1,0 +1,14 @@
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\bin\Debug\net6.0\CurrencyWeb.Entities.deps.json
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\bin\Debug\net6.0\CurrencyWeb.Entities.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\bin\Debug\net6.0\CurrencyWeb.Entities.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.AssemblyInfoInputs.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.AssemblyInfo.cs
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\refint\CurrencyWeb.Entities.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\ref\CurrencyWeb.Entities.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\bin\Debug\net6.0\CurrencyWeb.Entities.runtimeconfig.json
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.csproj.AssemblyReference.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Entities\obj\Debug\net6.0\CurrencyWeb.Entities.genruntimeconfig.cache

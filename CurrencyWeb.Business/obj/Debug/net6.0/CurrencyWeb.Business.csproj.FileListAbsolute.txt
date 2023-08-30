@@ -1,0 +1,17 @@
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\bin\Debug\net6.0\CurrencyWeb.Business.deps.json
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\bin\Debug\net6.0\CurrencyWeb.Business.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\bin\Debug\net6.0\CurrencyWeb.Business.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.AssemblyInfoInputs.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.AssemblyInfo.cs
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.csproj.CoreCompileInputs.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\refint\CurrencyWeb.Business.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\ref\CurrencyWeb.Business.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\bin\Debug\net6.0\CurrencyWeb.DAL.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\bin\Debug\net6.0\CurrencyWeb.Entities.dll
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\bin\Debug\net6.0\CurrencyWeb.DAL.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\bin\Debug\net6.0\CurrencyWeb.Entities.pdb
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.csproj.AssemblyReference.cache
+C:\Users\Samet\source\repos\CurrencyWebProject\CurrencyWeb.Business\obj\Debug\net6.0\CurrencyWeb.Business.csproj.CopyComplete
