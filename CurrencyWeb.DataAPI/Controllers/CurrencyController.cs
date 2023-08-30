@@ -26,7 +26,7 @@ namespace CurrencyWeb.DataAPI.Controllers
             _currencyService = currencyService;
         }
 
-       
+        
 
         [HttpGet]
         [Route("GetCurrency")]
